@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name drv8876)(type Legacy)(uri ${KIPRJMOD}/libraries/custom/drv8876/DRV8876PWPT.lib)(options "")(descr ""))
+)
