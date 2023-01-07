@@ -209,9 +209,9 @@ $EndComp
 Text Label 10750 4150 0    50   ~ 0
 ~FAULT
 Text Label 10500 4450 0    50   ~ 0
-OUT1
+OUT+
 Text Label 10500 4550 0    50   ~ 0
-OUT2
+OUT-
 $Comp
 L power:GND #PWR?
 U 1 1 638F5D8D
@@ -645,7 +645,7 @@ AR Path="/637E70BB/6391E383" Ref="R?"  Part="1"
 AR Path="/6391E383" Ref="R2"  Part="1" 
 F 0 "R2" H 4650 1750 50  0000 L CNN
 F 1 "100K" H 4550 1650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 1700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4800 1700 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF6800T5E_C23228.pdf" H 4800 1700 50  0001 C CNN
 F 4 "C23228" H 4800 1700 50  0001 C CNN "LCSC"
 	1    4800 1700
@@ -675,7 +675,7 @@ AR Path="/637E70BB/6391E39F" Ref="R?"  Part="1"
 AR Path="/6391E39F" Ref="R1"  Part="1" 
 F 0 "R1" H 4650 1150 50  0000 L CNN
 F 1 "100K" H 4550 1050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4800 1050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4800 1050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/lcsc/2206010100_UNI-ROYAL-Uniroyal-Elec-0603WAF6800T5E_C23228.pdf" H 4800 1050 50  0001 C CNN
 F 4 "C23228" H 4800 1050 50  0001 C CNN "LCSC"
 	1    4800 1050
@@ -721,9 +721,9 @@ Wire Notes Line
 Text Notes 6850 2450 0    50   ~ 0
 Test points
 Text Label 1250 1300 2    50   ~ 0
-OUT1
+OUT+
 Text Label 1250 1400 2    50   ~ 0
-OUT2
+OUT-
 Wire Wire Line
 	1250 1300 1400 1300
 Wire Wire Line
@@ -776,7 +776,7 @@ AR Path="/637E70BB/6397A056" Ref="AE?"  Part="1"
 AR Path="/6397A056" Ref="AE1"  Part="1" 
 F 0 "AE1" H 1600 4950 50  0000 L CNN
 F 1 "PCB_antenna" H 1550 4650 50  0000 L CNN
-F 2 "RF_Antenna:Texas_SWRA117D_2.4GHz_Right" H 1300 4875 50  0001 C CNN
+F 2 "RF_Antenna:Texas_SWRA117D_2.4GHz_Left" H 1300 4875 50  0001 C CNN
 F 3 "~" H 1300 4875 50  0001 C CNN
 	1    1400 4700
 	-1   0    0    -1  
@@ -1018,7 +1018,7 @@ Wire Wire Line
 	4150 5600 4000 5600
 Wire Wire Line
 	4150 4500 4000 4500
-Text Label 4150 6300 0    50   ~ 0
+Text Label 4150 6200 0    50   ~ 0
 GPIO_LED
 Wire Wire Line
 	4150 5700 4000 5700
@@ -1315,28 +1315,6 @@ Text Notes 10800 6450 0    50   ~ 0
 H-bridge
 Wire Notes Line
 	6950 2500 6950 7750
-$Comp
-L Connector_Generic:Conn_01x12 J2
-U 1 1 63944AEA
-P 6100 4100
-F 0 "J2" H 6180 4092 50  0000 L CNN
-F 1 "Conn_01x12" H 6180 4001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 6100 4100 50  0001 C CNN
-F 3 "~" H 6100 4100 50  0001 C CNN
-	1    6100 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x12 J3
-U 1 1 63945246
-P 6100 6100
-F 0 "J3" H 6180 6092 50  0000 L CNN
-F 1 "Conn_01x12" H 6180 6001 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 6100 6100 50  0001 C CNN
-F 3 "~" H 6100 6100 50  0001 C CNN
-	1    6100 6100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 4200 4150 4200
 Wire Wire Line
@@ -1393,8 +1371,6 @@ Text Label 4150 6000 0    50   ~ 0
 GPIO20
 Text Label 4150 6100 0    50   ~ 0
 GPIO22
-Text Label 4150 6200 0    50   ~ 0
-GPIO23
 Text Label 4150 6500 0    50   ~ 0
 GPIO26
 Text Label 4150 6600 0    50   ~ 0
@@ -1426,10 +1402,6 @@ Wire Wire Line
 Wire Wire Line
 	5900 4500 5750 4500
 Wire Wire Line
-	5900 4600 5750 4600
-Wire Wire Line
-	5900 4700 5750 4700
-Wire Wire Line
 	5900 5800 5750 5800
 Wire Wire Line
 	5900 5900 5750 5900
@@ -1445,28 +1417,18 @@ Wire Wire Line
 	5900 6400 5750 6400
 Wire Wire Line
 	5900 6500 5750 6500
-Wire Wire Line
-	5900 6600 5750 6600
-Wire Wire Line
-	5900 6700 5750 6700
-Text Label 5750 6100 2    50   ~ 0
+Text Label 5750 6000 2    50   ~ 0
 GPIO31
-Text Label 5750 6200 2    50   ~ 0
+Text Label 5750 6100 2    50   ~ 0
 GPIO30
-Text Label 5750 6300 2    50   ~ 0
+Text Label 5750 6200 2    50   ~ 0
 GPIO29
-Text Label 5750 6400 2    50   ~ 0
+Text Label 5750 6300 2    50   ~ 0
 GPIO28
-Text Label 5750 6500 2    50   ~ 0
+Text Label 5750 6400 2    50   ~ 0
 GPIO27
-Text Label 5750 6600 2    50   ~ 0
+Text Label 5750 6500 2    50   ~ 0
 GPIO26
-Text Label 5750 6700 2    50   ~ 0
-GPIO_BTN
-Text Label 5750 4700 2    50   ~ 0
-GPIO_LED
-Text Label 5750 4600 2    50   ~ 0
-GPIO23
 Text Label 5750 4500 2    50   ~ 0
 GPIO22
 Text Label 5750 4400 2    50   ~ 0
@@ -1483,7 +1445,7 @@ Text Label 5750 3900 2    50   ~ 0
 GPIO14
 Text Label 5750 3800 2    50   ~ 0
 GPIO13
-Text Label 5750 6000 2    50   ~ 0
+Text Label 5750 5900 2    50   ~ 0
 GPIO10
 Text Label 4150 4600 0    50   ~ 0
 PH-IN2
@@ -1497,7 +1459,7 @@ Text Label 4150 5000 0    50   ~ 0
 GPIO10
 Text Label 4150 4200 0    50   ~ 0
 IMODE
-Text Label 5750 5900 2    50   ~ 0
+Text Label 5750 5800 2    50   ~ 0
 GPIO9
 Text Label 9550 1250 0    50   ~ 0
 ADC_VBATT
@@ -1787,4 +1749,27 @@ F 3 "" H 1650 6300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 6100 2200 6100
+$Comp
+L Connector_Generic:Conn_01x10 J3
+U 1 1 63BD5321
+P 6100 6000
+F 0 "J3" H 6180 5992 50  0000 L CNN
+F 1 "Conn_01x10" H 6180 5901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6100 6000 50  0001 C CNN
+F 3 "~" H 6100 6000 50  0001 C CNN
+	1    6100 6000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4150 6300
+$Comp
+L Connector_Generic:Conn_01x10 J2
+U 1 1 63C344E1
+P 6100 4000
+F 0 "J2" H 6180 3992 50  0000 L CNN
+F 1 "Conn_01x10" H 6180 3901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6100 4000 50  0001 C CNN
+F 3 "~" H 6100 4000 50  0001 C CNN
+	1    6100 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
