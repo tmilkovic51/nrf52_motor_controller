@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Test_point_1mm
+#
+DEF Test_point_1mm TP 0 40 Y Y 1 F N
+F0 "TP" 150 0 50 H V C CNN
+F1 "Test_point_1mm" 50 -100 50 H I C CNN
+F2 "custom_footprints:test_point_1mm" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+$FPLIST
+ Test*
+$ENDFPLIST
+DRAW
+X ~ TP 0 0 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

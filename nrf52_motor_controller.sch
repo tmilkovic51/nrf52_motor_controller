@@ -457,130 +457,6 @@ Connection ~ 10500 5450
 Text Notes 7150 4250 0    50   ~ 0
 Internal pulldown on sleep pin
 $Comp
-L Connector:TestPoint_Small TP?
-U 1 1 63908BB4
-P 6950 1000
-AR Path="/637E70BB/63908BB4" Ref="TP?"  Part="1" 
-AR Path="/63908BB4" Ref="TP1"  Part="1" 
-F 0 "TP1" H 6998 1000 50  0000 L CNN
-F 1 "VTref" H 6998 955 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7150 1000 50  0001 C CNN
-F 3 "~" H 7150 1000 50  0001 C CNN
-	1    6950 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Small TP?
-U 1 1 63908BBA
-P 6950 1200
-AR Path="/637E70BB/63908BBA" Ref="TP?"  Part="1" 
-AR Path="/63908BBA" Ref="TP2"  Part="1" 
-F 0 "TP2" H 6998 1200 50  0000 L CNN
-F 1 "SWDIO" H 6998 1155 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7150 1200 50  0001 C CNN
-F 3 "~" H 7150 1200 50  0001 C CNN
-	1    6950 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Small TP?
-U 1 1 63908BC0
-P 6950 1400
-AR Path="/637E70BB/63908BC0" Ref="TP?"  Part="1" 
-AR Path="/63908BC0" Ref="TP3"  Part="1" 
-F 0 "TP3" H 6998 1400 50  0000 L CNN
-F 1 "SWDCLK" H 6998 1355 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7150 1400 50  0001 C CNN
-F 3 "~" H 7150 1400 50  0001 C CNN
-	1    6950 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Small TP?
-U 1 1 63908BC6
-P 6950 1600
-AR Path="/637E70BB/63908BC6" Ref="TP?"  Part="1" 
-AR Path="/63908BC6" Ref="TP4"  Part="1" 
-F 0 "TP4" H 6998 1600 50  0000 L CNN
-F 1 "SWO" H 6998 1555 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7150 1600 50  0001 C CNN
-F 3 "~" H 7150 1600 50  0001 C CNN
-	1    6950 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Small TP?
-U 1 1 63908BCC
-P 6950 1800
-AR Path="/637E70BB/63908BCC" Ref="TP?"  Part="1" 
-AR Path="/63908BCC" Ref="TP5"  Part="1" 
-F 0 "TP5" H 6998 1800 50  0000 L CNN
-F 1 "~RESET" H 6998 1754 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7150 1800 50  0001 C CNN
-F 3 "~" H 7150 1800 50  0001 C CNN
-	1    6950 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Small TP?
-U 1 1 63908BD2
-P 6950 2000
-AR Path="/637E70BB/63908BD2" Ref="TP?"  Part="1" 
-AR Path="/63908BD2" Ref="TP6"  Part="1" 
-F 0 "TP6" H 6998 2000 50  0000 L CNN
-F 1 "GND" H 6998 1955 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7150 2000 50  0001 C CNN
-F 3 "~" H 7150 2000 50  0001 C CNN
-	1    6950 2000
-	1    0    0    -1  
-$EndComp
-Text Label 6800 1200 2    50   ~ 0
-SWDIO
-Wire Wire Line
-	6950 1000 6800 1000
-Wire Wire Line
-	6950 1200 6800 1200
-Wire Wire Line
-	6950 1400 6800 1400
-Wire Wire Line
-	6950 1600 6800 1600
-Wire Wire Line
-	6950 1800 6800 1800
-Wire Wire Line
-	6950 2000 6800 2000
-Text Label 6800 1400 2    50   ~ 0
-SWDCLK
-Text Label 6800 1600 2    50   ~ 0
-SWO
-Text Label 6800 1800 2    50   ~ 0
-~RESET
-$Comp
-L power:GND #PWR?
-U 1 1 63908BE2
-P 6800 2000
-AR Path="/637E70BB/63908BE2" Ref="#PWR?"  Part="1" 
-AR Path="/63908BE2" Ref="#PWR023"  Part="1" 
-F 0 "#PWR023" H 6800 1750 50  0001 C CNN
-F 1 "GND" H 6805 1827 50  0000 C CNN
-F 2 "" H 6800 2000 50  0001 C CNN
-F 3 "" H 6800 2000 50  0001 C CNN
-	1    6800 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 63908BE8
-P 6800 1000
-AR Path="/637E70BB/63908BE8" Ref="#PWR?"  Part="1" 
-AR Path="/63908BE8" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 6800 850 50  0001 C CNN
-F 1 "+3V3" H 6815 1173 50  0000 C CNN
-F 2 "" H 6800 1000 50  0001 C CNN
-F 3 "" H 6800 1000 50  0001 C CNN
-	1    6800 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED_Small D?
 U 1 1 6391E367
 P 5800 1550
@@ -1770,6 +1646,118 @@ F 1 "Conn_01x10" H 6180 3901 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 6100 4000 50  0001 C CNN
 F 3 "~" H 6100 4000 50  0001 C CNN
 	1    6100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 63DEDDD7
+P 6700 950
+AR Path="/637E70BB/63DEDDD7" Ref="#PWR?"  Part="1" 
+AR Path="/63DEDDD7" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 6700 800 50  0001 C CNN
+F 1 "+3V3" H 6715 1123 50  0000 C CNN
+F 2 "" H 6700 950 50  0001 C CNN
+F 3 "" H 6700 950 50  0001 C CNN
+	1    6700 950 
+	1    0    0    -1  
+$EndComp
+Text Label 6700 1150 2    50   ~ 0
+SWDIO
+Text Label 6700 1350 2    50   ~ 0
+SWDCLK
+Text Label 6700 1550 2    50   ~ 0
+SWO
+Text Label 6700 1750 2    50   ~ 0
+~RESET
+$Comp
+L power:GND #PWR?
+U 1 1 63E08CF2
+P 6700 1950
+AR Path="/637E70BB/63E08CF2" Ref="#PWR?"  Part="1" 
+AR Path="/63E08CF2" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 6700 1700 50  0001 C CNN
+F 1 "GND" H 6705 1777 50  0000 C CNN
+F 2 "" H 6700 1950 50  0001 C CNN
+F 3 "" H 6700 1950 50  0001 C CNN
+	1    6700 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1950 6850 1950
+Wire Wire Line
+	6700 1750 6850 1750
+Wire Wire Line
+	6700 1550 6850 1550
+Wire Wire Line
+	6700 1350 6850 1350
+Wire Wire Line
+	6700 1150 6850 1150
+Wire Wire Line
+	6700 950  6850 950 
+$Comp
+L custom_symbols:Test_point_1mm TP1
+U 1 1 63F5A7C8
+P 6850 950
+F 0 "TP1" H 6979 972 50  0000 L CNN
+F 1 "Test_point_1mm" H 6900 850 50  0001 C CNN
+F 2 "custom_footprints:test_point_1mm" H 6850 1150 50  0001 C CNN
+F 3 "" H 6850 1150 50  0001 C CNN
+	1    6850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_symbols:Test_point_1mm TP2
+U 1 1 63F5AC4F
+P 6850 1150
+F 0 "TP2" H 6979 1172 50  0000 L CNN
+F 1 "Test_point_1mm" H 6900 1050 50  0001 C CNN
+F 2 "custom_footprints:test_point_1mm" H 6850 1350 50  0001 C CNN
+F 3 "" H 6850 1350 50  0001 C CNN
+	1    6850 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_symbols:Test_point_1mm TP3
+U 1 1 63F5AF4B
+P 6850 1350
+F 0 "TP3" H 6979 1372 50  0000 L CNN
+F 1 "Test_point_1mm" H 6900 1250 50  0001 C CNN
+F 2 "custom_footprints:test_point_1mm" H 6850 1550 50  0001 C CNN
+F 3 "" H 6850 1550 50  0001 C CNN
+	1    6850 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_symbols:Test_point_1mm TP4
+U 1 1 63F5B12D
+P 6850 1550
+F 0 "TP4" H 6979 1572 50  0000 L CNN
+F 1 "Test_point_1mm" H 6900 1450 50  0001 C CNN
+F 2 "custom_footprints:test_point_1mm" H 6850 1750 50  0001 C CNN
+F 3 "" H 6850 1750 50  0001 C CNN
+	1    6850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_symbols:Test_point_1mm TP5
+U 1 1 63F5B3FE
+P 6850 1750
+F 0 "TP5" H 6979 1772 50  0000 L CNN
+F 1 "Test_point_1mm" H 6900 1650 50  0001 C CNN
+F 2 "custom_footprints:test_point_1mm" H 6850 1950 50  0001 C CNN
+F 3 "" H 6850 1950 50  0001 C CNN
+	1    6850 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_symbols:Test_point_1mm TP6
+U 1 1 63F5B68A
+P 6850 1950
+F 0 "TP6" H 6979 1972 50  0000 L CNN
+F 1 "Test_point_1mm" H 6900 1850 50  0001 C CNN
+F 2 "custom_footprints:test_point_1mm" H 6850 2150 50  0001 C CNN
+F 3 "" H 6850 2150 50  0001 C CNN
+	1    6850 1950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

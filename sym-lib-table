@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name drv8876)(type Legacy)(uri ${KIPRJMOD}/libraries/custom/drv8876/DRV8876PWPT.lib)(options "")(descr ""))
+  (lib (name custom_symbols)(type Legacy)(uri ${KIPRJMOD}/libraries/custom/custom_symbols/custom_symbols.lib)(options "")(descr ""))
 )
